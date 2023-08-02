@@ -1,8 +1,7 @@
-import { useState, useEffect } from 'react';
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
-import SearchPage from './pages/SearchPage'
+import SearchPage from './pages/SearchPage';
+import AnimeView from './pages/AnimeView';
 import './App.css';
-
 
 
 function App(){
@@ -15,6 +14,7 @@ function App(){
         <Routes>
           <Route index element={<SearchPage/>}/>
           <Route path="/search" element={<SearchPage/>}/>
+          <Route path="/view" element={<AnimeView/>}/>
         </Routes>
       </BrowserRouter>
     </div>

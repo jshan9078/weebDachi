@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700");
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
 
 * {
   margin: 0;
@@ -8,12 +8,12 @@
 }
 
 :root {
-  --font-roboto: "Roboto Slab", serif;
-  --font-raleway: "Raleway", sans-serif;
+  --font-raleway: "Raleway";
+  --font-sedgwick: "Sedgwick Ave Display";
 }
 
 body {
-  font-family: var(--font-roboto);
+  font-family: var(--font-raleway);
   background-color: #212426;
 }
 
@@ -27,17 +27,19 @@ body {
 }
 
 h1 {
-  font-size: 3rem;
+  font-family: var(--font-sedgwick);
+  font-size: 7vw;
   letter-spacing: 0.9px;
   background: linear-gradient(
     90deg,
     rgba(249, 211, 180, 1) 0%,
-    rgba(249, 211, 180, 0) 100%
+    rgba(249, 211, 180, 0) 110%
   );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   width: fit-content;
+  filter: drop-shadow(offset-x offset-y blur-radius orange);
 }
 
 .search {
@@ -50,7 +52,7 @@ h1 {
 
   padding: 1.5rem 1.75rem;
   border-radius: 3rem;
-  background: #1f2123;
+  background: #3C3A3A;
   -webkit-box-shadow: 5px 5px 7px #1c1d1f, -5px -5px 7px #222527;
   box-shadow: 5px 5px 7px #1c1d1f, -5px -5px 7px #222527;
 }
@@ -64,30 +66,21 @@ h1 {
   padding-right: 1rem;
 
   outline: none;
-  color: #a1a1a1;
-  background: #1f2123;
+  color: white;
+  background: #3C3A3A;
 }
 
-.search img {
+#searchButton {
   width: 35px;
   height: 35px;
   cursor: pointer;
+  color:#F6C686;  
 }
 
-/* .search button {
-  padding: 20px 40px;
-  border-radius: 0.5rem;
-  margin-left: 15px;
-  color: #a1a1a1;
-  font-family: var(--font-raleway);
-  font-weight: 900;
-  letter-spacing: 0.75px;
-  font-size: 1.25rem;
-  cursor: pointer;
-  background: #1f2123;
-  -webkit-box-shadow: 5px 5px 7px #1c1d1f, -5px -5px 7px #222527;
-  box-shadow: 5px 5px 7px #1c1d1f, -5px -5px 7px #222527;
-} */
+#searchButton:hover {
+  color: white;
+}
+
 
 .empty {
   width: 100%;
@@ -123,7 +116,7 @@ h1 {
   border-radius: 12px;
   overflow: hidden;
   border: none;
-
+  cursor:pointer;
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
   box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.1);
 }
@@ -164,7 +157,7 @@ h1 {
 }
 
 .anime div:nth-of-type(3) span {
-  font-family: "Raleway", sans-serif;
+  font-family: "Raleway";
   text-transform: uppercase;
   font-size: 13px;
   letter-spacing: 2px;
@@ -174,7 +167,7 @@ h1 {
 
 .anime div:nth-of-type(3) h3 {
   margin-top: 5px;
-  font-family: "Roboto Slab", serif;
+  font-family: "Raleway";
   color: #f9d3b4;
 }
 
@@ -205,10 +198,14 @@ h1 {
     font-size: 1rem;
   }
 
-  .search img {
+  #searchButton {
     width: 20px;
     height: 20px;
+    cursor: pointer;
+    color:#F6C686; 
   }
+
+  
 }
 
 @media screen and (max-width: 400px) {

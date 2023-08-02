@@ -1,6 +1,7 @@
-import { useState, useEffect } from 'react';
-import SearchIcon from '../search.svg';
-import AnimeCard from '../components/AnimeCard'
+import { useState} from 'react';
+import AnimeCard from '../components/AnimeCard';
+import { Search } from "react-bootstrap-icons";
+import { BrowserRouter,Routes,Route,useNavigate  } from 'react-router-dom';
 import '../App.css';
 
 const API_URL = 'https://weeb-api-7nrxlzoyjq-uc.a.run.app' 
@@ -146,9 +147,7 @@ function SearchPage(){
     }
   }
 
-  // useEffect(()=>{
-  //   searchAnimes('naruto');
-  // },[])
+
 
 
     return (
@@ -156,7 +155,8 @@ function SearchPage(){
             <h1>weebDachi</h1>
             <div className="search">
                 <input placeholder="Search for anime" value={searchTerm} onChange={(e)=>setSearchTerm(e.target.value)} onKeyDown={handleKeyDown} />
-                <img src={SearchIcon} alt="search" onClick={()=>searchAnimes(searchTerm)} />
+                <Search id="searchButton" onClick={()=>searchAnimes(searchTerm)}/>
+                
             </div>
 
             {

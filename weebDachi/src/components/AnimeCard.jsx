@@ -1,9 +1,18 @@
 import React from 'react';
+import { BrowserRouter,Routes,Route,useNavigate  } from 'react-router-dom';
+import AnimeView from '../pages/AnimeView';
 
-const AnimeCard = ({series}) =>{
+const AnimeCard = ({series},props) =>{
+
+    let navigate = useNavigate(); 
+    const routeChange = () =>{ 
+        let path = `/view`; 
+        navigate(path,{state:{siteLink:series.siteLink}});
+    }
+
     return(
         <>
-        <div className="anime">
+        <div className="anime" onClick={routeChange} >
             <div>
                 <p> {series.status}</p>
             </div>
@@ -21,3 +30,4 @@ const AnimeCard = ({series}) =>{
 
 
 export default AnimeCard;
+//onClick={()=><AnimeView/>}
