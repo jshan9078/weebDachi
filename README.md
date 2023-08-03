@@ -1,5 +1,5 @@
 # weebDachi
-**A React web app for viewing and downloading anime. It uses my RESTful API, [weebAPI](https://github.com/JonnyACCI/weebAPI)**
+**A React website for viewing and downloading anime. It uses my RESTful API, [weebAPI](https://github.com/JonnyACCI/weebAPI)**
 
 ### Technologies Used
 - React
