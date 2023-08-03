@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
 @import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap');
 
 * {
   margin: 0;
@@ -10,6 +11,7 @@
 :root {
   --font-raleway: "Raleway";
   --font-sedgwick: "Sedgwick Ave Display";
+  --font-oxygen: "Oxygen";
 }
 
 body {
@@ -17,18 +19,12 @@ body {
   background-color: #212426;
 }
 
-.app {
-  padding: 4rem;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-h1 {
+#mainName {
+  margin: auto;
   font-family: var(--font-sedgwick);
   font-size: 7vw;
+  margin-top:3vw;
   letter-spacing: 0.9px;
   background: linear-gradient(
     90deg,
@@ -42,16 +38,294 @@ h1 {
   filter: drop-shadow(offset-x offset-y blur-radius orange);
 }
 
+
+
+#topOfView {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  margin-top:2vw;
+}
+
+#name {
+  font-family: var(--font-sedgwick);
+  font-size: 4vw;
+  margin-left:7vw;
+  margin-right:35vw;
+  letter-spacing: 0.9px;
+  background: linear-gradient(
+    90deg,
+    rgba(249, 211, 180, 1) 0%,
+    rgba(249, 211, 180, 0) 110%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: fit-content;
+  filter: drop-shadow(offset-x offset-y blur-radius orange);
+  cursor:pointer;
+}
+
+
+#searchMini {
+  width:30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0.79rem 0.79rem;
+  border-radius: 1rem;
+  background: #3C3A3A;
+  -webkit-box-shadow: 5px 5px 7px #1c1d1f, -5px -5px 7px #222527;
+  box-shadow: 5px 5px 7px #1c1d1f, -5px -5px 7px #222527;
+  margin-right:5vw;
+}
+
+#searchMini input{
+  flex: 1;
+  border: none;
+  font-size: 1.5rem;
+  font-family: var(--font-raleway);
+  font-weight: 500;
+  padding-right: 1rem;
+
+  outline: none;
+  color: white;
+  background: #3C3A3A;
+}
+
+#sideOfView{
+  margin-left:5.9vw;
+  margin-top:2vw;
+  list-style-type: none;
+  align-items: center;
+  justify-content: center;
+  position:relative;
+  width:25vw;
+  margin-right:-5vw;
+  height:50vw;
+}
+
+#poster{
+  width:25vw;
+  height:35vw;
+  border-radius:1vw;
+}
+
+#viewButton{
+  position:absolute;
+  top: 73%;
+  align-items: center;
+  justify-content: center;
+  border-radius:1rem;
+  width:100%;
+  font-family:var(--font-raleway);
+  padding: 1rem 1rem;
+  background-color: #BD9E8D;
+  color:#593C3C;
+  font-size: 1.5vw;
+  cursor:pointer;
+}
+
+#viewButton:hover{
+  background-color:#d5b892;
+}
+
+#bottomOfView{
+  display:flex;
+  
+}
+#sideOfView2{
+  margin-left:7vw;
+  margin-top:2vw;
+  list-style-type: none;
+  align-items: center;
+  justify-content: center;
+  position:relative;
+  width:50vw;
+  margin-right:-5vw;
+  height:50vw;
+}
+#moreinfo{
+  list-style-type: none;
+  margin-left:-3vw;
+  margin-top:1vw;
+}
+
+#moreinfopic{
+  color:#F6C686;
+  display:inline;
+  vertical-align:middle;
+  margin-right:1vw;
+}
+
+
+#moreinfoentry{
+  color:white;
+  display:inline;
+  vertical-align:middle;
+  font-size: 1.5vw;
+  font-weight: 200;
+  margin-right:1vw;
+  text-transform: capitalize;
+}
+
+
+#animeName{
+  text-transform: uppercase;
+  color:white;
+  font-weight:600;
+
+  
+}
+
+#extraoptions{
+  margin-top:1vw;
+}
+
+#description{
+  list-style-type:none;
+  margin-left:-3vw;
+}
+#synopsis{
+  color:white;
+  font-weight:200;
+}
+
+#descriptionicon{
+  color:#F6C686;
+  vertical-align:middle;
+  margin-right:1vw;
+}
+
+#categoryentry{
+  margin-top:1vw;
+  vertical-align:middle;
+  color:white;
+  text-transform: capitalize;
+}
+
+#mal{
+  margin-top:1vw;
+  vertical-align:middle;
+  color:white;
+  text-transform: capitalize;
+  cursor:pointer;
+}
+
+#mal:hover{
+  color: #F6C686;
+}
+
+#mal:link, #mal:visited{
+  text-decoration: none;
+}
+
+#episodeSearch {
+  width:40%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0.79rem 0.79rem;
+  border-radius: 1rem;
+  background: #3C3A3A;
+  -webkit-box-shadow: 5px 5px 7px #1c1d1f, -5px -5px 7px #222527;
+  box-shadow: 5px 5px 7px #1c1d1f, -5px -5px 7px #222527;
+}
+
+#episodeSearch input{
+  flex: 1;
+  border: none;
+  font-size: 1rem;
+  font-family: var(--font-raleway);
+  font-weight: 500;
+  padding-right:-2vw;
+  outline: none;
+  color: white;
+  background: #3C3A3A;
+}
+
+#episodelist{
+  list-style-type: none;
+  margin-left:-3vw;
+}
+
+#errormessage{
+  color:#F6C686;
+  font-weight:100;
+  font-size:1.5vw;
+  margin-top:1vw;
+}
+
+#successlist{
+  margin-top:1vw;
+  margin-left: -3vw;
+  list-style-type: none;
+}
+
+
+#downloadOptions{
+  margin-top:1.5vw;
+  width: 100%;
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#downloadOption{
+  text-align:center;
+  cursor:pointer;
+  margin-left:1vw;
+  margin-right:1vw;
+  background-color: #BD9E8D;
+  border-radius:1rem;
+  font-family: var(--font-oxygen);
+  margin-bottom:1.5vw;
+  
+}
+
+#downloadOption:hover{
+  background-color:#d5b892;
+}
+
+#firstinfo{
+  color:#593C3C;
+  padding-right:1vw;
+  padding-left:1vw;
+  padding-top:0.5vw;
+  
+}
+
+#secondinfo {
+  color:white;
+  padding-bottom:0.5vw;
+}
+
+#downloadOptionsTitle{
+  text-align: center;
+  text-transform: uppercase;
+  margin-top:2vw;
+  color:#d5b892;
+  font-weight:300;
+  font-size:2vw;
+  margin-bottom:-1vw;
+}
+
+
+
 .search {
   width: 71%;
-  margin: 4rem 0 2rem;
-
+  margin: auto;
+  margin-top:3vw;
   display: flex;
   align-items: center;
   justify-content: center;
 
   padding: 1.5rem 1.75rem;
-  border-radius: 3rem;
+  border-radius: 1rem;
   background: #3C3A3A;
   -webkit-box-shadow: 5px 5px 7px #1c1d1f, -5px -5px 7px #222527;
   box-shadow: 5px 5px 7px #1c1d1f, -5px -5px 7px #222527;
@@ -106,6 +380,8 @@ h1 {
   align-items: center;
   flex-wrap: wrap;
 }
+
+
 
 .anime {
   width: 310px;
@@ -184,45 +460,3 @@ h1 {
   opacity: 1;
 }
 
-@media screen and (max-width: 600px) {
-  .app {
-    padding: 4rem 2rem;
-  }
-
-  .search {
-    padding: 1rem 1.75rem;
-    width: 100%;
-  }
-
-  .search input {
-    font-size: 1rem;
-  }
-
-  #searchButton {
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
-    color:#F6C686; 
-  }
-
-  
-}
-
-@media screen and (max-width: 400px) {
-  .app {
-    padding: 4rem 1rem;
-  }
-
-  h1 {
-    font-size: 2rem;
-  }
-
-  .container {
-    margin-top: 2rem;
-  }
-
-  .anime {
-    width: "100%";
-    margin: 1rem;
-  }
-}

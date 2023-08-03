@@ -1,18 +1,17 @@
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
-import SearchPage from './pages/SearchPage';
+import Home from './pages/Home';
 import AnimeView from './pages/AnimeView';
-import './App.css';
-
+import SearchPage from './pages/SearchPage';
 
 function App(){
   
 
   return (
 
-    <div className="app">
+    <div>
       <BrowserRouter>
         <Routes>
-          <Route index element={<SearchPage/>}/>
+          <Route index element={<Home/>}/>
           <Route path="/search" element={<SearchPage/>}/>
           <Route path="/view" element={<AnimeView/>}/>
         </Routes>
