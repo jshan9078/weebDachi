@@ -10,4 +10,4 @@
 - Figma
 
 ## User Guide
-**The website is hosted here [`https://64cb417b0587b33dfe07f9c9--startling-platypus-256a7c.netlify.app/`](https://64cb417b0587b33dfe07f9c9--startling-platypus-256a7c.netlify.app/)**
+**The website is hosted here [`weebdachi.netlify.app`](weebdachi.netlify.app)**
