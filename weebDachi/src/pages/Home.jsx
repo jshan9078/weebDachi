@@ -160,17 +160,13 @@ function Home(){
             </div>
 
             {
-                animes?.length > 0 ? (
-                <div className="container">
-                    {
-                    animes.map((anime)=>(<AnimeCard series={anime}/>))
-                    }
-                </div>
-                ): (
-                <div className="empty">
-                    <h2>No animes found</h2>
-                </div>
-                )
+                animes?.length > 0 
+                ? 
+                    animes === defaultSearchResults 
+                    ? (<div></div>) 
+                    : (<div className="container">{animes.map((anime)=>(<AnimeCard series={anime}/>))}</div>)
+                 
+                : (<div className="empty"><h2>No animes found</h2></div>)
             }
         
         </div>

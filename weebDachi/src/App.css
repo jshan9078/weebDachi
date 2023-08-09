@@ -24,7 +24,7 @@ body {
   margin: auto;
   font-family: var(--font-sedgwick);
   font-size: 7vw;
-  margin-top:3vw;
+  margin-top:7vw;
   letter-spacing: 0.9px;
   background: linear-gradient(
     90deg,
@@ -319,7 +319,7 @@ body {
 .search {
   width: 71%;
   margin: auto;
-  margin-top:3vw;
+  margin-top:7vw;
   display: flex;
   align-items: center;
   justify-content: center;
