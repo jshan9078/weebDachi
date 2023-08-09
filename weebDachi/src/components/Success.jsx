@@ -31,7 +31,7 @@ const Success = ({ep,series,epNumber}) =>{
     return(
         <>
         <ul id="successlist">
-            <li><BoxArrowUpRight id="descriptionicon" size={30}/><strong><a id="mal" href={ep.episodeLink} target="_blank">{"Watch " + series.title + " Episode " + epNumber + " on Animepahe"}</a></strong></li>
+            <li><BoxArrowUpRight id="descriptionicon" size={30}/><strong><a id="mal" href={ep.episodeLink} target="_blank">{"Watch " + series.title + " Episode " + epNumber}</a></strong></li>
             <li id="downloadOptionsTitle">Download Options</li>
             <li><div id="downloadOptions">
                 {downloadOptions.map((downloadOption)=>(<Download episodeChoice={downloadOption}/>))}

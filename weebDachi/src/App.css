@@ -460,3 +460,181 @@ body {
   opacity: 1;
 }
 
+@media only screen and (max-width: 900px) {
+  html{
+    align-items: center;
+    justify-content: center;
+  }
+  #mainName{
+    margin-top: 70vw;
+    font-size:14vw;
+    margin-left:19vw;
+    margin-bottom:10vw;
+  }
+  .search {
+    width: 70%;
+    margin: auto;
+    margin-top:7vw;
+    display: inline;
+    
+    margin-left:9vw;
+    
+    border-radius: 1rem;
+   
+  }
+  
+  .search input {
+    
+    font-size: 1.5rem;
+    
+    padding-right: 0;
+  
+    outline: none;
+    color: white;
+    background: #3C3A3A;
+  }
+  
+  #searchButton {
+    display:none;
+    
+  }
+
+  #name{
+    display: none;
+  }
+
+  #searchMini {
+    margin-top:5vw;
+    width:79%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom:10vw;
+    padding: 1rem 0.79rem;
+    margin-right:0vw;
+  }
+  
+  #searchMini input{
+    font-size: 1.5rem;
+
+    font-weight: 500;
+    padding-bottom:0vw;
+  
+ 
+  }
+
+  #poster{
+    width:70vw;
+    height:auto;
+  }
+
+  
+  #sideOfView2{
+    margin-top:140vw;
+    width:100%;
+    margin-left:-27vw;
+  }
+
+  #viewButton{
+    margin-top:70vw;
+    position:absolute;
+    top: 73%;
+    align-items: center;
+    justify-content: center;
+    border-radius:1rem;
+    width:275%;
+    padding: 1rem 1rem;
+    font-size: 7vw;
+  }
+
+  
+  #moreinfo{
+   margin-top:5vw;
+   margin-bottom:5vw;
+  }
+
+  #animeName{
+    text-align:center;
+    margin-left:-9vw;
+  }
+
+  #moreinfopic{
+    display:none;
+  }
+
+  #moreinfoentry{
+    display:block;
+    font-size:5vw;
+    text-align:center;
+    margin-left:-14vw;
+    font-weight:700;
+    margin-top:1vw;
+    margin-bottom:1vw;
+    color:#F6C686;
+  }
+  
+  #synopsis{
+    text-align:center;
+    margin-left:-15vw;
+    padding-right:5vw;
+    padding-left:5vw;
+  }
+
+  #descriptionicon{
+    margin-right:5vw;
+    color:beige;
+  }
+
+  #categoryentry{
+    margin-top:5vw;
+    color:#F6C686;
+    font-style:italic;
+    text-align:center;
+    margin-left:-12vw;
+  }
+
+  #successlist{
+    margin-top:7vw;
+    margin-left:-10vw;
+  }
+  #mal{
+    color:#F6C686;
+    font-style:italic;
+    text-align:center;
+    margin-left:0vw;
+    
+  }
+
+  #episodeSearch {
+    width:70%;
+    display:block;
+    align-items: center;
+    justify-content: center;
+    margin-left:7vw;
+    padding: 0.79rem 0.79rem;
+   
+  }
+  
+  #downloadOptionsTitle{
+    font-size:7vw;
+    margin-top:10vw;
+    margin-left:-14vw;
+    margin-bottom:-10vw;
+  }
+  
+  
+  #episodelist{
+    list-style-type: none;
+    margin-left:-3vw;
+  }
+
+  #downloadOptions{
+    margin-left:-7.5vw;
+  }
+
+  #downloadOption{
+    margin-top:3vw;
+    margin-left:3vw;
+  }
+}
+
