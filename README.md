@@ -10,4 +10,4 @@
 - Figma
 
 ## User Guide
-**The website is hosted here [`weebdachi.netlify.app`](weebdachi.netlify.app)**
+**The website is hosted here [`https://weebdachi.netlify.app`](https://weebdachi.netlify.app)**
