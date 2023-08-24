@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import {BoxArrowUpRight} from "react-bootstrap-icons";
 import { BrowserRouter,Routes,Route,useNavigate  } from 'react-router-dom';
 
-const API_URL = 'https://weeb-api-7nrxlzoyjq-uc.a.run.app' 
+const API_URL = 'https://weebapi.onrender.com' 
 
 const Download = ({episodeChoice}) =>{
 

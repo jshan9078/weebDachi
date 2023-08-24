@@ -13,7 +13,7 @@ const ep = {
     "duration": "00:23:21",
     "episodeLink": "https://animepahe.ru/play/77ee300b-a712-bd53-f2e8-4244ec1f9c99/78e0732f182cf956f55eae3d08f1b310029f91cb980744e30928ea11af10e521"
 }
-const API_URL = 'https://weeb-api-7nrxlzoyjq-uc.a.run.app' 
+const API_URL = 'https://weebapi.onrender.com' 
 
 const Success = ({ep,series,epNumber}) =>{
     const [downloadOptions,setDownloadOptions] = useState([]);
@@ -43,5 +43,3 @@ const Success = ({ep,series,epNumber}) =>{
 
 
 export default Success;
-
-//<h2 id="downloadOptionsTitle">Download Options</h2>

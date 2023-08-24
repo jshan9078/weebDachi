@@ -7,7 +7,7 @@ import Episodes from '../components/Episodes';
 import '../App.css';
 
 
-const API_URL = 'https://weeb-api-7nrxlzoyjq-uc.a.run.app' 
+const API_URL = 'https://weebapi.onrender.com' 
 
 
 function AnimeView(){

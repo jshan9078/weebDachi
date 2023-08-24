@@ -5,7 +5,7 @@ import {CheckLg, BoxArrowUpRight} from "react-bootstrap-icons";
 import Error from './Error';
 import Success from './Success';
 
-const API_URL = 'https://weeb-api-7nrxlzoyjq-uc.a.run.app' 
+const API_URL = 'https://weebapi.onrender.com' 
 
 const Episodes = ({series}) =>{
     const[episode,setEpisode]=useState({});

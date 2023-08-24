@@ -5,7 +5,7 @@ import { BrowserRouter,Routes,Route,useNavigate,  } from 'react-router-dom';
 import React from 'react';
 import '../App.css';
 
-const API_URL = 'https://weeb-api-7nrxlzoyjq-uc.a.run.app' 
+const API_URL = 'https://weebapi.onrender.com' 
 
 const defaultSearchResults = [
     {
